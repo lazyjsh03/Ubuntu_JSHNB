@@ -1,0 +1,148 @@
+check_matching.c:1:1: error: expected identifier or ‘(’ before ‘/’ token
+    1 | / 쉽게 배우는 C자료구조(최영규, 생능 출판사, 2024)
+      | ^
+In file included from /usr/include/stdio.h:43,
+                 from check_matching.c:7:
+/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:95:3: error: unknown type name ‘size_t’
+   95 |   size_t __pad5;
+      |   ^~~~~~
+/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:98:67: error: ‘size_t’ undeclared here (not in a function)
+   98 |   char _unused2[15 * sizeof (int) - 4 * sizeof (void *) - sizeof (size_t)];
+      |                                                                   ^~~~~~
+/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:1:1: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+  +++ |+#include <stddef.h>
+    1 | /* Copyright (C) 1991-2022 Free Software Foundation, Inc.
+In file included from check_matching.c:7:
+/usr/include/stdio.h:308:35: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  308 | extern FILE *fmemopen (void *__s, size_t __len, const char *__modes)
+      |                                   ^~~~~~
+/usr/include/stdio.h:314:47: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  314 | extern FILE *open_memstream (char **__bufloc, size_t *__sizeloc) __THROW
+      |                                               ^~~~~~
+/usr/include/stdio.h:333:34: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  333 |                     int __modes, size_t __n) __THROW;
+      |                                  ^~~~~~
+/usr/include/stdio.h:339:24: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  339 |                        size_t __size) __THROW;
+      |                        ^~~~~~
+/usr/include/stdio.h:378:44: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  378 | extern int snprintf (char *__restrict __s, size_t __maxlen,
+      |                                            ^~~~~~
+/usr/include/stdio.h:382:45: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  382 | extern int vsnprintf (char *__restrict __s, size_t __maxlen,
+      |                                             ^~~~~~
+In file included from check_matching.c:7:
+/usr/include/stdio.h:633:30: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  633 |                              size_t *__restrict __n, int __delimiter,
+      |                              ^~~~~~
+/usr/include/stdio.h:636:28: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  636 |                            size_t *__restrict __n, int __delimiter,
+      |                            ^~~~~~
+/usr/include/stdio.h:646:27: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  646 |                           size_t *__restrict __n,
+      |                           ^~~~~~
+/usr/include/stdio.h:675:15: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘fread’
+  675 | extern size_t fread (void *__restrict __ptr, size_t __size,
+      |               ^~~~~
+/usr/include/stdio.h:681:15: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘fwrite’
+  681 | extern size_t fwrite (const void *__restrict __ptr, size_t __size,
+      |               ^~~~~~
+/usr/include/stdio.h:702:15: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘fread_unlocked’
+  702 | extern size_t fread_unlocked (void *__restrict __ptr, size_t __size,
+      |               ^~~~~~~~~~~~~~
+/usr/include/stdio.h:704:15: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘fwrite_unlocked’
+  704 | extern size_t fwrite_unlocked (const void *__restrict __ptr, size_t __size,
+      |               ^~~~~~~~~~~~~~~
+In file included from check_matching.c:8:
+/usr/include/stdlib.h:98:15: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__ctype_get_mb_cur_max’
+   98 | extern size_t __ctype_get_mb_cur_max (void) __THROW __wur;
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+In file included from check_matching.c:8:
+/usr/include/stdlib.h:412:25: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  412 |                         size_t __statelen) __THROW __nonnull ((2));
+      |                         ^~~~~~
+/usr/include/stdlib.h:442:25: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  442 |                         size_t __statelen,
+      |                         ^~~~~~
+/usr/include/stdlib.h:540:22: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  540 | extern void *malloc (size_t __size) __THROW __attribute_malloc__
+      |                      ^~~~~~
+/usr/include/stdlib.h:543:22: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  543 | extern void *calloc (size_t __nmemb, size_t __size)
+      |                      ^~~~~~
+/usr/include/stdlib.h:543:38: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  543 | extern void *calloc (size_t __nmemb, size_t __size)
+      |                                      ^~~~~~
+/usr/include/stdlib.h:551:36: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  551 | extern void *realloc (void *__ptr, size_t __size)
+      |                                    ^~~~~~
+/usr/include/stdlib.h:563:41: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  563 | extern void *reallocarray (void *__ptr, size_t __nmemb, size_t __size)
+      |                                         ^~~~~~
+/usr/include/stdlib.h:563:57: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  563 | extern void *reallocarray (void *__ptr, size_t __nmemb, size_t __size)
+      |                                                         ^~~~~~
+/usr/include/stdlib.h:569:41: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  569 | extern void *reallocarray (void *__ptr, size_t __nmemb, size_t __size)
+      |                                         ^~~~~~
+/usr/include/stdlib.h:569:57: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  569 | extern void *reallocarray (void *__ptr, size_t __nmemb, size_t __size)
+      |                                                         ^~~~~~
+In file included from /usr/include/stdlib.h:574,
+                 from check_matching.c:8:
+/usr/include/alloca.h:32:22: error: expected declaration specifiers or ‘...’ before ‘size_t’
+   32 | extern void *alloca (size_t __size) __THROW;
+      |                      ^~~~~~
+In file included from check_matching.c:8:
+/usr/include/stdlib.h:580:22: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  580 | extern void *valloc (size_t __size) __THROW __attribute_malloc__
+      |                      ^~~~~~
+/usr/include/stdlib.h:586:45: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  586 | extern int posix_memalign (void **__memptr, size_t __alignment, size_t __size)
+      |                                             ^~~~~~
+/usr/include/stdlib.h:586:65: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  586 | extern int posix_memalign (void **__memptr, size_t __alignment, size_t __size)
+      |                                                                 ^~~~~~
+/usr/include/stdlib.h:592:29: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  592 | extern void *aligned_alloc (size_t __alignment, size_t __size)
+      |                             ^~~~~~
+/usr/include/stdlib.h:592:49: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  592 | extern void *aligned_alloc (size_t __alignment, size_t __size)
+      |                                                 ^~~~~~
+/usr/include/stdlib.h:829:23: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  829 |                       size_t __nmemb, size_t __size, __compar_fn_t __compar)
+      |                       ^~~~~~
+/usr/include/stdlib.h:829:39: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  829 |                       size_t __nmemb, size_t __size, __compar_fn_t __compar)
+      |                                       ^~~~~~
+/usr/include/stdlib.h:838:34: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  838 | extern void qsort (void *__base, size_t __nmemb, size_t __size,
+      |                                  ^~~~~~
+/usr/include/stdlib.h:838:50: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  838 | extern void qsort (void *__base, size_t __nmemb, size_t __size,
+      |                                                  ^~~~~~
+/usr/include/stdlib.h:912:20: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  912 |                    size_t __len) __THROW __nonnull ((3, 4, 5));
+      |                    ^~~~~~
+/usr/include/stdlib.h:915:20: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  915 |                    size_t __len) __THROW __nonnull ((3, 4, 5));
+      |                    ^~~~~~
+/usr/include/stdlib.h:919:45: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  919 |                     char *__restrict __buf, size_t __len)
+      |                                             ^~~~~~
+/usr/include/stdlib.h:923:45: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  923 |                     char *__restrict __buf, size_t __len)
+      |                                             ^~~~~~
+/usr/include/stdlib.h:930:36: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  930 | extern int mblen (const char *__s, size_t __n) __THROW;
+      |                                    ^~~~~~
+/usr/include/stdlib.h:934:48: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  934 |                    const char *__restrict __s, size_t __n) __THROW;
+      |                                                ^~~~~~
+/usr/include/stdlib.h:941:15: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘mbstowcs’
+  941 | extern size_t mbstowcs (wchar_t *__restrict  __pwcs,
+      |               ^~~~~~~~
+/usr/include/stdlib.h:945:15: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘wcstombs’
+  945 | extern size_t wcstombs (char *__restrict __s,
+      |               ^~~~~~~~
+make: *** [<builtin>: check_matching] Error 1

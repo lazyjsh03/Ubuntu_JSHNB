@@ -1,0 +1,9 @@
+id          pass        uid     gid
+privaoxy    x           73      73
+pvm         x           24      24
+desktop     x           80      80
+radvd       x           75      75
+choijm      x           502     500
+sepj20      x           503     500
+zsjung      x           504     500
+

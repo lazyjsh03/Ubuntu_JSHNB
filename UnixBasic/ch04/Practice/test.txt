@@ -1,0 +1,7 @@
+<TEST.TXT>
+My name is Seung-Hyeon Je.
+I wake up in the morning.
+This is a living room.
+And that's a bedroom.
+This is a my first vim text file!!
+My major is Computer Science.

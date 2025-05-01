@@ -1,0 +1,27 @@
+total 196
+drwx------  14 ce22e037 student  4096  4월 17 10:37 ./
+drwxr-x--x 168 root     student  4096  3월 18 22:15 ../
+-rw-r--r--   1 ce22e037 student    67  4월 13 15:12 .bash_aliases
+-rw-------   1 ce22e037 student 22014  4월 15 16:33 .bash_history
+-rw-r--r--   1 ce22e037 student   220  1월  7  2022 .bash_logout
+-rw-r--r--   1 ce22e037 student  4356  4월 13 16:01 .bashrc
+drwx------   7 ce22e037 student  4096  4월  4 22:36 .cache/
+drwx------   7 ce22e037 student  4096  4월  9 14:11 .config/
+drwxr-xr-x   5 ce22e037 student  4096  4월 10 00:44 .cursor-server/
+drwxr-xr-x   3 ce22e037 student  4096  4월  1 21:44 .dotnet/
+-rw-------   1 ce22e037 student    20  4월 17 10:12 .lesshst
+drwxr-xr-x   6 ce22e037 student  4096  4월  1 21:22 .local/
+-rw-r--r--   1 ce22e037 student   807  1월  7  2022 .profile
+-rw-r--r--   1 ce22e037 student   160  4월  1 15:24 .tmux.conf
+drwxr-xr-x   3 ce22e037 student  4096  4월  1 14:34 .vim/
+-rw-------   1 ce22e037 student 21975  4월 17 10:37 .viminfo
+-rw-r--r--   1 ce22e037 student  1335  4월  1 13:32 .vimrc
+drwxr-x---   5 ce22e037 student  4096  4월  5 02:17 .vscode-server/
+-rw-r--r--   1 ce22e037 student   183  4월  5 02:17 .wget-hsts
+-rw-r--r--   1 ce22e037 student 49453  4월  9 14:11 .zcompdump
+drwxr-xr-x  10 ce22e037 student  4096  4월 10 10:22 UnixBasic/
+drwxr-xr-x   3 ce22e037 student  4096  3월 27 10:03 diary/
+-rw-r--r--   1 ce22e037 student   525  4월 13 16:06 err_history.txt
+drwxr-xr-x   4 ce22e037 student  4096  4월  1 14:37 myTest/
+drwxr-xr-x  12 ce22e037 student  4096  4월  1 14:38 real/
+drwx------   3 ce22e037 student  4096  3월  6 20:54 snap/
