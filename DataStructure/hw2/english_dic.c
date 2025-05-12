@@ -17,7 +17,7 @@ typedef struct
 typedef struct TreeNode
 {
         element key;
-        struct TreeNode *left;
+        struct TreeNode *left; // struct를 사용하여 구조체를 정의하여야 함.
         struct TreeNode *right;
 } TreeNode;
 
@@ -53,6 +53,7 @@ TreeNode *search(TreeNode *root, element key)
                 else if (compare(key, p->key) > 0)
                         p = p->right;
         }
+        printf("\n찾는 키가 없습니다!\n");
         return p; // 탐색에 실패했을 경우 NULL 반환
 }
 TreeNode *new_node(element item)
@@ -69,6 +70,12 @@ TreeNode *insert_node(TreeNode *node, element key)
                 return new_node(key);
 
         // 그렇지 않으면 순환적으로 트리를 내려간다.
+
+        if (compare(key, node->key) == 0)
+        {
+                printf("\n이미 같은 키가 있습니다!\n");
+                return node;
+        }
         if (compare(key, node->key) < 0)
                 node->left = insert_node(node->left, key);
         else if (compare(key, node->key) > 0)
@@ -89,7 +96,10 @@ TreeNode *min_value_node(TreeNode *node)
 TreeNode *delete_node(TreeNode *root, element key)
 {
         if (root == NULL)
+        {
+                printf("\n찾는 키가 이진 트리에 없습니다!\n");
                 return root;
+        }
 
         // 만약 키가 루트보다 작으면 왼쪽 서브 트리에 있는 것임
         if (compare(key, root->key) < 0)
@@ -114,12 +124,12 @@ TreeNode *delete_node(TreeNode *root, element key)
                         return temp;
                 }
                 // 세 번째 경우
-                TreeNode *temp = min_value_node(root->right);
+                TreeNode *temp = min_value_node(root->left);
 
                 // 중외 순회시 후계 노드를 복사한다.
                 root->key = temp->key;
                 // 중외 순회시 후계 노드를 삭제한다.
-                root->right = delete_node(root->right, temp->key);
+                root->left = delete_node(root->left, temp->key);
         }
         return root;
 }
@@ -146,14 +156,17 @@ int main(void)
                 {
                 case 'i':
                         printf("단어:");
-                        gets(e.word);
+                        fgets(e.word, sizeof(e.word), stdin); // get() -> fgets()로 변경
+                        e.word[strcspn(e.word, "\n")] = 0;    // 개행 문자 제거
                         printf("의미:");
-                        gets(e.meaning);
+                        fgets(e.meaning, sizeof(e.meaning), stdin); // get() -> fgets()로 변경
+                        e.meaning[strcspn(e.meaning, "\n")] = 0;    // 개행 문자 제거
                         root = insert_node(root, e);
                         break;
                 case 'd':
                         printf("단어:");
-                        gets(e.word);
+                        fgets(e.word, sizeof(e.word), stdin);
+                        e.word[strcspn(e.word, "\n")] = 0; // 개행 문자 제거
                         root = delete_node(root, e);
                         break;
                 case 'p':
@@ -162,10 +175,11 @@ int main(void)
                         break;
                 case 's':
                         printf("단어:");
-                        gets(e.word);
+                        fgets(e.word, sizeof(e.word), stdin); // get() -> fgets()로 변경
+                        e.word[strcspn(e.word, "\n")] = 0;    // 개행 문자 제거
                         tmp = search(root, e);
                         if (tmp != NULL)
-                                printf("의미:%s\n", e.meaning);
+                                printf("의미:%s\n", tmp->key.meaning); // search() 함수의 반환값의 key를 참조, meaning을 출력
                         break;
                 }
 
