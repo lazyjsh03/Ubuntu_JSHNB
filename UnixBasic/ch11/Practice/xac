@@ -1,0 +1,5 @@
+
+daemon:x:1:
+dialout:x:20:lazyjsh03
+dip:x:30:lazyjsh03
+disk:x:6:

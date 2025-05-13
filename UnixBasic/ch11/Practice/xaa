@@ -1,0 +1,4 @@
+_ssh:x:104:
+adm:x:4:syslog,lazyjsh03
+admin:x:106:
+audio:x:29:laz
