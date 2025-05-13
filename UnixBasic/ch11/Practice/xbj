@@ -1,0 +1,10 @@
+xmpp-client	5222/tcp	jabber-client	# Jabber Client Connection
+xmpp-client	5222/udp	jabber-client
+xmpp-server	5269/tcp	jabber-server	# Jabber Server Connection
+xmpp-server	5269/udp	jabber-server
+cfengine	5308/tcp
+cfengine	5308/udp
+mdns		5353/tcp			# Multicast DNS
+mdns		5353/udp
+postgresql	5432/tcp	postgres	# PostgreSQL Database
+postgresql	5432/udp	postgres

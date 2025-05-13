@@ -1,0 +1,10 @@
+x11-6		6006/tcp
+x11-6		6006/udp
+x11-7		6007/tcp
+x11-7		6007/udp
+gnutella-svc	6346/tcp			# gnutella
+gnutella-svc	6346/udp
+gnutella-rtr	6347/tcp			# gnutella
+gnutella-rtr	6347/udp
+sge-qmaster	6444/tcp	sge_qmaster	# Grid Engine Qmaster Service
+sge-qmaster	6444/udp	sge_qmaster

@@ -1,0 +1,10 @@
+isns		3205/udp			# iSNS Server Port
+iscsi-target	3260/tcp
+mysql		3306/tcp
+mysql		3306/udp
+nut		3493/tcp			# Network UPS Tools
+nut		3493/udp
+distcc		3632/tcp			# distributed compiler
+distcc		3632/udp
+daap		3689/tcp			# Digital Audio Access Protocol
+daap		3689/udp

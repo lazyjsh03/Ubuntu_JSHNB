@@ -1,0 +1,10 @@
+freeciv		5556/tcp	rptp		# Freeciv gameplay
+freeciv		5556/udp
+amqps		5671/tcp			# AMQP protocol over TLS/SSL
+amqp		5672/tcp
+amqp		5672/udp
+amqp		5672/sctp
+ggz		5688/tcp			# GGZ Gaming Zone
+ggz		5688/udp
+x11		6000/tcp	x11-0		# X Window System
+x11		6000/udp	x11-0

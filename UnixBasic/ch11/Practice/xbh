@@ -1,0 +1,10 @@
+remctl		4373/udp
+f5-iquery	4353/tcp			# F5 iQuery
+f5-iquery	4353/udp
+ipsec-nat-t	4500/udp			# IPsec NAT-Traversal [RFC3947]
+iax		4569/tcp			# Inter-Asterisk eXchange
+iax		4569/udp
+mtn		4691/tcp			# monotone Netsync Protocol
+mtn		4691/udp
+radmin-port	4899/tcp			# RAdmin Port
+radmin-port	4899/udp

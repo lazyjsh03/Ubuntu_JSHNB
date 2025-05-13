@@ -1,0 +1,10 @@
+customs		1001/udp
+skkserv		1178/tcp			# skk jisho server port
+predict		1210/udp			# predict -- satellite tracking
+rmtcfg		1236/tcp			# Gracilis Packeten remote config server
+wipld		1300/tcp			# Wipl network monitor
+xtel		1313/tcp			# french minitel
+xtelw		1314/tcp			# french minitel
+support		1529/tcp			# GNATS
+cfinger		2003/tcp			# GNU Finger
+frox		2121/tcp			# frox: caching ftp proxy

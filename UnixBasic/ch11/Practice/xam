@@ -1,6 +1,30 @@
-:x:26:
-tty:x:5:
-users:x:100:lazyjsh03
-utmp:x:43:
-uucp:x:10:
-uuid
+freeciv		5556/tcp	rptp		# Freeciv gameplay
+freeciv		5556/udp
+amqps		5671/tcp			# AMQP protocol over TLS/SSL
+amqp		5672/tcp
+amqp		5672/udp
+amqp		5672/sctp
+ggz		5688/tcp			# GGZ Gaming Zone
+ggz		5688/udp
+x11		6000/tcp	x11-0		# X Window System
+x11		6000/udp	x11-0
+x11-1		6001/tcp
+x11-1		6001/udp
+x11-2		6002/tcp
+x11-2		6002/udp
+x11-3		6003/tcp
+x11-3		6003/udp
+x11-4		6004/tcp
+x11-4		6004/udp
+x11-5		6005/tcp
+x11-5		6005/udp
+x11-6		6006/tcp
+x11-6		6006/udp
+x11-7		6007/tcp
+x11-7		6007/udp
+gnutella-svc	6346/tcp			# gnutella
+gnutella-svc	6346/udp
+gnutella-rtr	6347/tcp			# gnutella
+gnutella-rtr	6347/udp
+sge-qmaster	6444/tcp	sge_qmaster	# Grid Engine Qmaster Service
+sge-qmaster	6444/udp	sge_qmaster

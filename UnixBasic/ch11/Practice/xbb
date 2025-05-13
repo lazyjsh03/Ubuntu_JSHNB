@@ -1,0 +1,10 @@
+remoteping	1959/tcp			# remstats remoteping server
+cisco-sccp	2000/tcp			# Cisco SCCP
+cisco-sccp	2000/udp
+search		2010/tcp	ndtp
+pipe-server	2010/tcp	pipe_server
+nfs		2049/tcp			# Network File System
+nfs		2049/udp			# Network File System
+gnunet		2086/tcp
+gnunet		2086/udp
+rtcm-sc104	2101/tcp			# RTCM SC-104 IANA 1/29/99

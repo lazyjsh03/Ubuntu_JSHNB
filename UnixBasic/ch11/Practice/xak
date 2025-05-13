@@ -1,5 +1,30 @@
-zyjsh03
-sys:x:3:
-syslog:x:102:
-systemd-journal:x:999:
-systemd-ne
+f5-globalsite	2792/udp
+gsiftp		2811/tcp
+gsiftp		2811/udp
+gpsd		2947/tcp
+gpsd		2947/udp
+gds-db		3050/tcp	gds_db		# InterBase server
+gds-db		3050/udp	gds_db
+icpv2		3130/tcp	icp		# Internet Cache Protocol
+icpv2		3130/udp	icp
+isns		3205/tcp			# iSNS Server Port
+isns		3205/udp			# iSNS Server Port
+iscsi-target	3260/tcp
+mysql		3306/tcp
+mysql		3306/udp
+nut		3493/tcp			# Network UPS Tools
+nut		3493/udp
+distcc		3632/tcp			# distributed compiler
+distcc		3632/udp
+daap		3689/tcp			# Digital Audio Access Protocol
+daap		3689/udp
+svn		3690/tcp	subversion	# Subversion protocol
+svn		3690/udp	subversion
+suucp		4031/tcp			# UUCP over SSL
+suucp		4031/udp
+sysrqd		4094/tcp			# sysrq daemon
+sysrqd		4094/udp
+sieve		4190/tcp			# ManageSieve Protocol
+epmd		4369/tcp			# Erlang Port Mapper Daemon
+epmd		4369/udp
+remctl		4373/tcp		# Remote Authenticated Command Service

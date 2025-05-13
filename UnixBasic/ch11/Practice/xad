@@ -1,6 +1,30 @@
-
-fax:x:21:
-floppy:x:25:lazyjsh03
-ftp:x:111:
-games:x:60:
-input:x:
+cmip-agent	164/tcp
+cmip-agent	164/udp
+mailq		174/tcp			# Mailer transport queue for Zmailer
+mailq		174/udp
+xdmcp		177/tcp				# X Display Mgr. Control Proto
+xdmcp		177/udp
+nextstep	178/tcp		NeXTStep NextStep	# NeXTStep window
+nextstep	178/udp		NeXTStep NextStep	#  server
+bgp		179/tcp				# Border Gateway Protocol
+irc		194/tcp				# Internet Relay Chat
+irc		194/udp
+smux		199/tcp				# SNMP Unix Multiplexer
+smux		199/udp
+at-rtmp		201/tcp				# AppleTalk routing
+at-rtmp		201/udp
+at-nbp		202/tcp				# AppleTalk name binding
+at-nbp		202/udp
+at-echo		204/tcp				# AppleTalk echo
+at-echo		204/udp
+at-zis		206/tcp				# AppleTalk zone information
+at-zis		206/udp
+qmtp		209/tcp				# Quick Mail Transfer Protocol
+qmtp		209/udp
+z3950		210/tcp		wais		# NISO Z39.50 database
+z3950		210/udp		wais
+ipx		213/tcp				# IPX
+ipx		213/udp
+pawserv		345/tcp				# Perf Analysis Workbench
+pawserv		345/udp
+zserv		346/tcp				# Zebra server

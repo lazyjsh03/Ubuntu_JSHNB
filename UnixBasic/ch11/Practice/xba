@@ -1,0 +1,10 @@
+l2f		1701/tcp	l2tp
+l2f		1701/udp	l2tp
+radius		1812/tcp
+radius		1812/udp
+radius-acct	1813/tcp	radacct		# Radius Accounting
+radius-acct	1813/udp	radacct
+msnp		1863/tcp			# MSN Messenger
+msnp		1863/udp
+unix-status	1957/tcp			# remstats unix-status server
+log-server	1958/tcp			# remstats log server

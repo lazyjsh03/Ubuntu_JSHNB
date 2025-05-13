@@ -1,6 +1,30 @@
-
-shadow:x:42:
-src:x:40:
-ssl-cert:x:108:
-staff:x:50:
-sudo:x:27:la
+remoteping	1959/tcp			# remstats remoteping server
+cisco-sccp	2000/tcp			# Cisco SCCP
+cisco-sccp	2000/udp
+search		2010/tcp	ndtp
+pipe-server	2010/tcp	pipe_server
+nfs		2049/tcp			# Network File System
+nfs		2049/udp			# Network File System
+gnunet		2086/tcp
+gnunet		2086/udp
+rtcm-sc104	2101/tcp			# RTCM SC-104 IANA 1/29/99
+rtcm-sc104	2101/udp
+gsigatekeeper	2119/tcp
+gsigatekeeper	2119/udp
+gris		2135/tcp		# Grid Resource Information Server
+gris		2135/udp
+cvspserver	2401/tcp			# CVS client/server operations
+cvspserver	2401/udp
+venus		2430/tcp			# codacon port
+venus		2430/udp			# Venus callback/wbc interface
+venus-se	2431/tcp			# tcp side effects
+venus-se	2431/udp			# udp sftp side effect
+codasrv		2432/tcp			# not used
+codasrv		2432/udp			# server port
+codasrv-se	2433/tcp			# tcp side effects
+codasrv-se	2433/udp			# udp sftp side effect
+mon		2583/tcp			# MON traps
+mon		2583/udp
+dict		2628/tcp			# Dictionary server
+dict		2628/udp
+f5-globalsite	2792/tcp

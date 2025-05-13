@@ -1,0 +1,10 @@
+puppet		8140/tcp			# The Puppet master service
+bacula-dir	9101/tcp			# Bacula Director
+bacula-dir	9101/udp
+bacula-fd	9102/tcp			# Bacula File Daemon
+bacula-fd	9102/udp
+bacula-sd	9103/tcp			# Bacula Storage Daemon
+bacula-sd	9103/udp
+xmms2		9667/tcp	# Cross-platform Music Multiplexing System
+xmms2		9667/udp
+nbd		10809/tcp			# Linux Network Block Device

@@ -1,0 +1,10 @@
+ingreslock	1524/tcp
+ingreslock	1524/udp
+datametrics	1645/tcp	old-radius
+datametrics	1645/udp	old-radius
+sa-msg-port	1646/tcp	old-radacct
+sa-msg-port	1646/udp	old-radacct
+kermit		1649/tcp
+kermit		1649/udp
+groupwise	1677/tcp
+groupwise	1677/udp

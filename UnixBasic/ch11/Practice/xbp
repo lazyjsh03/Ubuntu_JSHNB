@@ -1,0 +1,10 @@
+afs3-bos	7007/tcp			# basic overseer process
+afs3-bos	7007/udp
+afs3-update	7008/tcp			# server-to-server updater
+afs3-update	7008/udp
+afs3-rmtsys	7009/tcp			# remote cache manager service
+afs3-rmtsys	7009/udp
+font-service	7100/tcp	xfs		# X Font Service
+font-service	7100/udp	xfs
+http-alt	8080/tcp	webcache	# WWW caching service
+http-alt	8080/udp

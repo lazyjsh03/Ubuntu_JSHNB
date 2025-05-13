@@ -1,0 +1,30 @@
+puppet		8140/tcp			# The Puppet master service
+bacula-dir	9101/tcp			# Bacula Director
+bacula-dir	9101/udp
+bacula-fd	9102/tcp			# Bacula File Daemon
+bacula-fd	9102/udp
+bacula-sd	9103/tcp			# Bacula Storage Daemon
+bacula-sd	9103/udp
+xmms2		9667/tcp	# Cross-platform Music Multiplexing System
+xmms2		9667/udp
+nbd		10809/tcp			# Linux Network Block Device
+zabbix-agent	10050/tcp			# Zabbix Agent
+zabbix-agent	10050/udp
+zabbix-trapper	10051/tcp			# Zabbix Trapper
+zabbix-trapper	10051/udp
+amanda		10080/tcp			# amanda backup services
+amanda		10080/udp
+dicom		11112/tcp
+hkp		11371/tcp			# OpenPGP HTTP Keyserver
+hkp		11371/udp
+bprd		13720/tcp			# VERITAS NetBackup
+bprd		13720/udp
+bpdbm		13721/tcp			# VERITAS NetBackup
+bpdbm		13721/udp
+bpjava-msvc	13722/tcp			# BP Java MSVC Protocol
+bpjava-msvc	13722/udp
+vnetd		13724/tcp			# Veritas Network Utility
+vnetd		13724/udp
+bpcd		13782/tcp			# VERITAS NetBackup
+bpcd		13782/udp
+vopied		13783/tcp			# VERITAS NetBackup

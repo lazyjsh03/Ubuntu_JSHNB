@@ -1,5 +1,30 @@
-
-netdev:x:107:lazyjsh03
-news:x:9:
-nogroup:x:65534:
-operator:x:37
+conference	531/tcp		chat
+netnews		532/tcp		readnews
+netwall		533/udp				# for emergency broadcasts
+gdomap		538/tcp				# GNUstep distributed objects
+gdomap		538/udp
+uucp		540/tcp		uucpd		# uucp daemon
+klogin		543/tcp				# Kerberized `rlogin' (v5)
+kshell		544/tcp		krcmd		# Kerberized `rsh' (v5)
+dhcpv6-client	546/tcp
+dhcpv6-client	546/udp
+dhcpv6-server	547/tcp
+dhcpv6-server	547/udp
+afpovertcp	548/tcp				# AFP over TCP
+afpovertcp	548/udp
+idfp		549/tcp
+idfp		549/udp
+remotefs	556/tcp		rfs_server rfs	# Brunhoff remote filesystem
+nntps		563/tcp		snntp		# NNTP over SSL
+submission	587/tcp				# Submission [RFC4409]
+ldaps		636/tcp				# LDAP over SSL
+ldaps		636/udp
+tinc		655/tcp				# tinc control port
+tinc		655/udp
+silc		706/tcp
+silc		706/udp
+kerberos-adm	749/tcp				# Kerberos `kadmin' (v5)
+#
+webster		765/tcp				# Network dictionary
+webster		765/udp
+rsync		873/tcp

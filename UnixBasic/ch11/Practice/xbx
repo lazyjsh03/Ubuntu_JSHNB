@@ -1,0 +1,10 @@
+iprop		2121/tcp			# incremental propagation
+#
+# Unofficial but necessary (for NetBSD) services
+#
+supfilesrv	871/tcp				# SUP server
+supfiledbg	1127/tcp			# SUP debugging
+
+#
+# Services added for the Debian GNU/Linux distribution
+#

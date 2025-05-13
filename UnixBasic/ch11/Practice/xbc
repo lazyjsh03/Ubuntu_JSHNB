@@ -1,0 +1,10 @@
+rtcm-sc104	2101/udp
+gsigatekeeper	2119/tcp
+gsigatekeeper	2119/udp
+gris		2135/tcp		# Grid Resource Information Server
+gris		2135/udp
+cvspserver	2401/tcp			# CVS client/server operations
+cvspserver	2401/udp
+venus		2430/tcp			# codacon port
+venus		2430/udp			# Venus callback/wbc interface
+venus-se	2431/tcp			# tcp side effects

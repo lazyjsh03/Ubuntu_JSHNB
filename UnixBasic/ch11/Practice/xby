@@ -1,0 +1,10 @@
+linuxconf	98/tcp				# LinuxConf
+poppassd	106/tcp				# Eudora
+poppassd	106/udp
+moira-db	775/tcp		moira_db	# Moira database
+moira-update	777/tcp		moira_update	# Moira update protocol
+moira-ureg	779/udp		moira_ureg	# Moira user registration
+spamd		783/tcp				# spamassassin daemon
+omirr		808/tcp		omirrd		# online mirror
+omirr		808/udp		omirrd
+customs		1001/tcp			# pmake customs server

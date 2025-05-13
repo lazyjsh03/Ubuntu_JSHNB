@@ -1,0 +1,10 @@
+vopied		13783/udp
+db-lsp		17500/tcp			# Dropbox LanSync Protocol
+dcap		22125/tcp			# dCache Access Protocol
+gsidcap		22128/tcp			# GSI dCache Access Protocol
+wnn6		22273/tcp			# wnn6
+wnn6		22273/udp
+
+#
+# Datagram Delivery Protocol services
+#

@@ -1,0 +1,10 @@
+f5-globalsite	2792/udp
+gsiftp		2811/tcp
+gsiftp		2811/udp
+gpsd		2947/tcp
+gpsd		2947/udp
+gds-db		3050/tcp	gds_db		# InterBase server
+gds-db		3050/udp	gds_db
+icpv2		3130/tcp	icp		# Internet Cache Protocol
+icpv2		3130/udp	icp
+isns		3205/tcp			# iSNS Server Port

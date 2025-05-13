@@ -1,5 +1,30 @@
-
-daemon:x:1:
-dialout:x:20:lazyjsh03
-dip:x:30:lazyjsh03
-disk:x:6:
+acr-nema	104/udp		dicom
+csnet-ns	105/tcp		cso-ns		# also used by CSO name server
+csnet-ns	105/udp		cso-ns
+rtelnet		107/tcp				# Remote Telnet
+rtelnet		107/udp
+pop3		110/tcp		pop-3		# POP version 3
+sunrpc		111/tcp		portmapper	# RPC 4.0 portmapper
+sunrpc		111/udp		portmapper
+auth		113/tcp		authentication tap ident
+sftp		115/tcp
+nntp		119/tcp		readnews untp	# USENET News Transfer Protocol
+ntp		123/tcp
+ntp		123/udp				# Network Time Protocol
+pwdgen		129/tcp				# PWDGEN service
+pwdgen		129/udp
+loc-srv		135/tcp		epmap		# Location Service
+loc-srv		135/udp		epmap
+netbios-ns	137/tcp				# NETBIOS Name Service
+netbios-ns	137/udp
+netbios-dgm	138/tcp				# NETBIOS Datagram Service
+netbios-dgm	138/udp
+netbios-ssn	139/tcp				# NETBIOS session service
+netbios-ssn	139/udp
+imap2		143/tcp		imap		# Interim Mail Access P 2 and 4
+snmp		161/tcp				# Simple Net Mgmt Protocol
+snmp		161/udp
+snmp-trap	162/tcp		snmptrap	# Traps for SNMP
+snmp-trap	162/udp		snmptrap
+cmip-man	163/tcp				# ISO mgmt over IP (CMOT)
+cmip-man	163/udp

@@ -1,0 +1,10 @@
+sge-execd	6445/tcp	sge_execd	# Grid Engine Execution Service
+sge-execd	6445/udp	sge_execd
+mysql-proxy	6446/tcp			# MySQL Proxy
+mysql-proxy	6446/udp
+babel		6696/udp			# Babel Routing Protocol
+ircs-u		6697/tcp		# Internet Relay Chat via TLS/SSL
+afs3-fileserver 7000/tcp	bbs		# file server itself
+afs3-fileserver 7000/udp	bbs
+afs3-callback	7001/tcp			# callbacks to cache managers
+afs3-callback	7001/udp
