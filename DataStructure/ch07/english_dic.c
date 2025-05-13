@@ -17,8 +17,8 @@ typedef struct
 typedef struct TreeNode
 {
         element key;
-        struct TreeNode *left;  // struct를 사용하여 구조체를 정의하여야 함.
-        struct TreeNode *right; // struct를 사용하여 구조체를 정의하여야 함.
+        struct TreeNode *left; // struct를 사용하여 구조체를 정의하여야 함.
+        struct TreeNode *right;
 } TreeNode;
 
 // 만약 e1 < e2 이면 -1 반환
@@ -73,7 +73,7 @@ TreeNode *insert_node(TreeNode *node, element key)
 
         if (compare(key, node->key) == 0)
         {
-                printf("\n이미 같은 키가 있습니다!\n"); // 중복된 키가 입력되면 오류 메시지 출력
+                printf("\n이미 같은 키가 있습니다!\n");
                 return node;
         }
         if (compare(key, node->key) < 0)
@@ -165,8 +165,8 @@ int main(void)
                         break;
                 case 'd':
                         printf("단어:");
-                        fgets(e.word, sizeof(e.word), stdin); // get() -> fgets()로 변경
-                        e.word[strcspn(e.word, "\n")] = 0;    // 개행 문자 제거
+                        fgets(e.word, sizeof(e.word), stdin);
+                        e.word[strcspn(e.word, "\n")] = 0; // 개행 문자 제거
                         root = delete_node(root, e);
                         break;
                 case 'p':
