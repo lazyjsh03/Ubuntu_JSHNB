@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+# test until loop
+#
+
+echo "Input name :"
+read person
+
+until who | grep $person # > /dev/null
+do
+    sleep 3
+done
+
+echo "\007"   # beep

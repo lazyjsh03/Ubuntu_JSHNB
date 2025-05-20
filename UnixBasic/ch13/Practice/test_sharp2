@@ -1,0 +1,6 @@
+#!/bin/rm
+# test_sharp2: 자기 자신을 지우는 스크립트
+# 이 스크립트를 실행시키면  아 피일이 지원지는 것 말고는 아무 일도 안 생깁니다.
+WHATEVER=65
+echo "This line is not printed."
+exit $WHATEVER # 여기서 exit로 빠져 나가지 못하니 뭐라고 적든 상관없겠죠.

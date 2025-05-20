@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+# test string 
+#
+
+echo "Are you OK (y/n) : "
+read ans                            # ans 변수에 값 저장
+
+if [[ $ans = [Yy]* ]]               # y로 시작하는 문자열 비교
+then
+    echo "Happy to hear it."
+else
+    echo "That's to bad."
+fi

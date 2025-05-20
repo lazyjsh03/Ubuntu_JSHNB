@@ -1,0 +1,21 @@
+#!/bin/bash
+#
+# test case
+#
+echo "Select command : "
+read cmd
+
+case $cmd in
+    [0-9]) # 0~9 digit
+        date
+        ;;
+    cd|CD) # cd or CD
+        echo $HOME
+        ;;
+    [aA-C]*) # string with a, A, B, C 
+        pwd
+        ;;
+    *)
+        echo "Usage : select commnd"
+        ;;
+esac

@@ -1,0 +1,14 @@
+#!/bin/bash
+#test_trap: trap을 테스트하는 스크립트
+#
+
+trap 'echo "$LINENO : count=$count"' DEBUG
+count=1
+sum=0
+while (( count<=10 ))
+do
+   (( sum+=count ))
+   let count+=1
+done
+
+echo "Sum(1~10) : $sum"

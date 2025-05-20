@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+# test select
+#
+
+PS3="Input command(1~3) :"
+
+select cmd in pwd date quit # pwd=1, date=2, quit=3
+do
+    case $cmd in
+        pwd) pwd ;;
+        date) date ;;
+        quit) break ;;
+        *) echo "Invalid input, select number" ;;
+    esac
+    
+    REPLY=
+done

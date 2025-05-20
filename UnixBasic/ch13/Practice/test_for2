@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# test for loop
+#
+
+for person in $(< list)
+do
+    echo "Hello, $person"
+done

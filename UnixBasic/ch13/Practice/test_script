@@ -1,0 +1,4 @@
+#!/bin/bash
+# My First Script Program
+echo "Hello Unix World."
+pwd
