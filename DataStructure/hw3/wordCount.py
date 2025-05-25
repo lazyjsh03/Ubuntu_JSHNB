@@ -12,7 +12,7 @@ if len(sys.argv) != 3:
     print("사용법: python3 wordCount.py 탐색지정단어 탐색지정빈도\n")
     sys.exit(1)
 
-file_name = "../words/tom-word-list.txt"
+file_name = "./tom-word-list.txt"
 search_word = sys.argv[1]
 search_freq = int(sys.argv[2])
 
