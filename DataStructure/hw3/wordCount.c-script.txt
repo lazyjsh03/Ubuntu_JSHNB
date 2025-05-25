@@ -1,0 +1,156 @@
+[C2] ls -l
+total 8
+-rw-r--r-- 1 jhmin professor 7454  5월 22 17:16 12345.zip
+[C2] unzip 12345.zip
+Archive:  12345.zip
+  inflating: LinkedQueue.c
+  inflating: LinkedQueue.h
+  inflating: Makefile
+  inflating: avl.c
+  inflating: avl.h
+  inflating: bst2.c
+  inflating: bst2.h
+  inflating: node2.c
+  inflating: node2.h
+  inflating: wordCount.c
+[C2] ls
+12345.zip      LinkedQueue.h  avl.c  bst2.c  node2.c  wordCount.c
+LinkedQueue.c  Makefile       avl.h  bst2.h  node2.h
+[C2] make clean
+rm -rf *.o wordCount
+[C2] make
+cc -fcommon -O    -c -o LinkedQueue.o LinkedQueue.c
+cc -fcommon -O    -c -o avl.o avl.c
+cc -fcommon -O    -c -o bst2.o bst2.c
+cc -fcommon -O    -c -o node2.o node2.c
+cc -fcommon -O    -c -o wordCount.o wordCount.c
+cc -o wordCount LinkedQueue.o avl.o bst2.o node2.o wordCount.o LinkedQueue.h avl.h bst2.h node2.h
+[C2] ls
+12345.zip      LinkedQueue.o  avl.h   bst2.h   node2.h    wordCount.c
+LinkedQueue.c  Makefile       avl.o   bst2.o   node2.o    wordCount.o
+LinkedQueue.h  avl.c          bst2.c  node2.c  wordCount
+[C2] wordCount beautiful 33
+[P1] 입력 단어 내역:
+입력 단어 총 개수= 74388, 고유 단어 총 개수= 8043
+
+[P2] 탐색지정 단어와 출현빈도:
+오름차순 정렬된 단어 기준 상하위 10개 단어와 출현빈도:
+('A', 93)
+('ABOUT', 2)
+('ADVENTURES', 1)
+('AFTER', 1)
+('ALABAMA', 1)
+('AS', 1)
+('AT', 2)
+('AUTHOR', 1)
+('About', 7)
+('Academy', 1)
+...............
+('yourn', 3)
+('yours', 1)
+('yourself', 12)
+('yourselves', 2)
+('youth', 1)
+('youthful', 1)
+('zeal', 1)
+('zebras', 1)
+('zenith', 1)
+('zephyr', 1)
+
+탐색지정 단어('beautiful', 8)
+
+[P3] 탐색지정빈도와 단어:
+출현 빈도 기준 내림차순 정렬된 상하위 10개 출현빈도와 단어:
+(3363, 'the')
+(2985, 'and')
+(1804, 'a')
+(1723, 'to')
+(1454, 'of')
+(1163, 'was')
+(1131, 'it')
+(1018, 'I')
+(962, 'that')
+(926, 'he')
+...............
+(1, 'Adventures')
+(1, 'Advantages')
+(1, 'Adored')
+(1, 'Acrobatics')
+(1, 'Academy')
+(1, 'AUTHOR')
+(1, 'AS')
+(1, 'ALABAMA')
+(1, 'AFTER')
+(1, 'ADVENTURES')
+
+탐색지정빈도(33)
+
+(33, 'lost')
+(33, 'mean')
+(33, 'sleep')
+(33, 'try')
+[C2] time wordCount Tom 55
+[P1] 입력 단어 내역:
+입력 단어 총 개수= 74388, 고유 단어 총 개수= 8043
+
+[P2] 탐색지정 단어와 출현빈도:
+오름차순 정렬된 단어 기준 상하위 10개 단어와 출현빈도:
+('A', 93)
+('ABOUT', 2)
+('ADVENTURES', 1)
+('AFTER', 1)
+('ALABAMA', 1)
+('AS', 1)
+('AT', 2)
+('AUTHOR', 1)
+('About', 7)
+('Academy', 1)
+...............
+('yourn', 3)
+('yours', 1)
+('yourself', 12)
+('yourselves', 2)
+('youth', 1)
+('youthful', 1)
+('zeal', 1)
+('zebras', 1)
+('zenith', 1)
+('zephyr', 1)
+
+탐색지정 단어('Tom', 806)
+
+[P3] 탐색지정빈도와 단어:
+출현 빈도 기준 내림차순 정렬된 상하위 10개 출현빈도와 단어:
+(3363, 'the')
+(2985, 'and')
+(1804, 'a')
+(1723, 'to')
+(1454, 'of')
+(1163, 'was')
+(1131, 'it')
+(1018, 'I')
+(962, 'that')
+(926, 'he')
+...............
+(1, 'Adventures')
+(1, 'Advantages')
+(1, 'Adored')
+(1, 'Acrobatics')
+(1, 'Academy')
+(1, 'AUTHOR')
+(1, 'AS')
+(1, 'ALABAMA')
+(1, 'AFTER')
+(1, 'ADVENTURES')
+
+탐색지정빈도(55)
+
+(55, 'Potter')
+(55, 'another')
+(55, 'make')
+(55, 'till')
+
+real    0m0.035s
+user    0m0.033s
+sys     0m0.003s
+[C2]
