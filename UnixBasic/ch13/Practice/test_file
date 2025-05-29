@@ -2,8 +2,7 @@
 #
 # test file type
 #
-echo "Input file name : "
-read file
+read -p "Input file name : " file
 
 if [[ ! -e $file ]]	# if file exists
 then
