@@ -168,19 +168,19 @@ void printArray(int arr[], int n, char* str)
 void main()
 {
 //	int 	list[9] = { 5, 3, 8, 4, 9, 1, 6, 2, 7 };
-    int 	list[9] = { 6, 3, 7, 4, 9, 1, 5, 2, 8 };
+    int 	list[8] = { 8, 1, 7, 3, 9, 2, 4, 5 };
 
     printf(" Original =");
-    print_array(list, 9);
+    print_array(list, 8);
 
 //	selection_sort(list, 9); 			    // 선택 정렬
 //	printArray(list, 9, "Selection");	    // 결과 출력 
 
-	insertion_sort(list, 9); 			    // 삽입 정렬
-	printArray(list, 9, "Insertion");
+	// insertion_sort(list, 9); 			    // 삽입 정렬
+	// printArray(list, 9, "Insertion");
 
-//	bubble_sort(list, 7); 			        // 버블 정렬 
-//	printArray(list, 7, "Bubble   ");
+	// bubble_sort(list, 9); 			        // 버블 정렬 
+	// printArray(list, 9, "Bubble   ");
 
 //	insertion_sort_fn(list, 7, descend); 	// 내림차순 선택정렬
 //	printArray(list, 7, "Insert-De");
@@ -191,8 +191,8 @@ void main()
 //	shell_sort(list, 9); 	                // 셸 정렬
 //	printArray(list, 9, "ShellSort");
 
-//	merge_sort(list, 0, 6); 	// 내림차순 선택정렬 알고리즘
-//	printArray(list, 7, "MergeSort");	// 정렬 후 배열 출력 
+	merge_sort(list, 0, 7); 	// 내림차순 선택정렬 알고리즘
+	printArray(list, 8, "MergeSort");	// 정렬 후 배열 출력 
 
 //    quick_sort(list, 0, 6); 	// 내림차순 선택정렬 알고리즘
 //    printArray(list, 7, "QuickSort");	// 정렬 후 배열 출력 

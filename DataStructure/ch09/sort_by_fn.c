@@ -17,6 +17,9 @@ int y_descend(Element a, Element b) { return (a.y - b.y); } // y 내림차순
 int z_ascend(Element a, Element b) {                        // 크기의 오름차순
     return ((b.x * b.x + b.y * b.y) - (a.x * a.x + a.y * a.y));
 }
+int z_descend(Element a, Element b) {                        // 크기의 내림차순
+    return ((a.x * a.x + a.y * a.y) - (b.x * b.x + b.y * b.y));
+}
 void insertion_sort_fn(Element A[], int n, int(*f)(Element, Element))
 {
     for (int i = 1; i < n; i++) {
@@ -48,4 +51,6 @@ void main()
 
     insertion_sort_fn(list, 9, z_ascend);
     print_point_array(list, 9, "z_ascend : ");
+    insertion_sort_fn(list, 9, z_descend);
+    print_point_array(list, 9, "z_descend: ");
 }
