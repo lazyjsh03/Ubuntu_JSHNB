@@ -51,10 +51,10 @@ void quickSort(WordFreq arr[], int left, int right) {
             return;
         }
         // 피벗의 최종 위치를 얻음
-        int pi = partition(arr, left, right);
+        int pivotIndex = partition(arr, left, right);
 
         // 피벗을 기준으로 좌우 부분 배열을 각각 정렬
-        quickSort(arr, left, pi - 1);  // 피벗 왼쪽 부분 정렬
-        quickSort(arr, pi + 1, right); // 피벗 오른쪽 부분 정렬
+        quickSort(arr, left, pivotIndex - 1);  // 피벗 왼쪽 부분 정렬
+        quickSort(arr, pivotIndex + 1, right); // 피벗 오른쪽 부분 정렬
     }
 }

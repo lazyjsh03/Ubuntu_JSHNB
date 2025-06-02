@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
 #include "bst.h"   // BST 관련 함수 및 구조체 정의
 #include "qsort.h" // qsort 관련 함수 정의
@@ -26,7 +25,6 @@ void readFile(const char* filename) {
     while (fgets(line_buffer, sizeof(line_buffer), file) != NULL) {
         // 개행 문자 제거
         line_buffer[strcspn(line_buffer, "\n")] = 0;
-        line_buffer[strcspn(line_buffer, "\r")] = 0;
 
         if (strlen(line_buffer) > 0) { // 비어있지 않은 줄만 처리
             totalWordCount++; // 파일에서 읽은 모든 단어(중복 포함) 카운트
@@ -69,8 +67,8 @@ void printP2(WordFreq sorted_words[], int count, const char* keyWord) {
         printf("('%s', %d)\n", sorted_words[i].word, sorted_words[i].freq);
     }
 
-    if (count > DISPLAY_COUNT) {    // 고유 단어가 10보다 클 때
-        if (count > DISPLAY_COUNT * 2) {
+    if (count > DISPLAY_COUNT) {    // 고유 단어 개수가 10보다 클 때
+        if (count > DISPLAY_COUNT * 2) {    // 고유 단어 개수가 20보다 클 때(가려지는 부분이 있음)
              printf(".............\n");
         }
         
@@ -89,7 +87,7 @@ void printP2(WordFreq sorted_words[], int count, const char* keyWord) {
         }
         
         for (int i = 0; i < items; i++) {
-             if (start + i < count) { // 배열 범위 확인
+             if (start + i < count) {
                 printf("('%s', %d)\n", sorted_words[start + i].word, sorted_words[start + i].freq);
             }
         }
@@ -103,20 +101,6 @@ void printP2(WordFreq sorted_words[], int count, const char* keyWord) {
         printf("\n탐색지정단어(%s) 없음\n", keyWord);
     }
 }
-
-// // qsort를 위한 비교 함수
-// // 빈도수 내림차순, 동일 빈도수 시 단어 오름차순
-// int compare(const void *a_ptr, const void *b_ptr) {
-//     const WordFreq *a = (const WordFreq *)a_ptr;
-//     const WordFreq *b = (const WordFreq *)b_ptr;
-
-//     // 빈도수 내림차순
-//     if (a->freq != b->freq) {
-//         return b->freq - a->freq; // a가 크면 음수 반환, b가 크면 양수 반환 -> 내림차순
-//     }
-//     // 빈도수가 같으면 단어 오름차순
-//     return strcmp(a->word, b->word);    // a가 크면 양수 반환, b가 크면 음수 반환 -> 내림차순
-// }
 
 // --- P3 출력 함수 ---
 void printP3(WordFreq sorted_words[], int count, int keyFreq) {     // 빈도수 정렬된 배열 전달
@@ -242,7 +226,6 @@ int main(int argc, char *argv[]) {
         // 중위 순회를 통해 알파벳 정렬
         inorder_bst(root, sortedArray, 0);
 
-        // 상/하위 목록 출력, 특정 단어 탐색 
         // P2 출력
         printP2(sortedArray, wordCount, keyWord);
 
@@ -254,7 +237,7 @@ int main(int argc, char *argv[]) {
 
         free(sortedArray);  // sortedArray 메모리 해제
     } else {
-        // 고유 단어가 없는 경우 P2 처리리
+        // 고유 단어가 없는 경우 P2 처리
         printf("\n[P2] 탐색지정 단어와 출현빈도:\n");
         printf("오름차순 정렬된 단어 기준 상하위 10개 단어와 출현빈도:\n");
         // 상/하위 목록 내용 없음

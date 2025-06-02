@@ -19,12 +19,9 @@ TNode* insert_bst(TNode* root, WordFreq item) {
     if (root == NULL) { // 트리가 비어있거나 삽입 위치에 도달한 경우
         return create_node(item); // 새 노드 생성
     }
-
-    int cmp = strcmp(item.word, root->data.word);
-
-    if (cmp < 0) { // 삽입할 단어가 현재 노드 단어보다 작으면 왼쪽으로
+    if (strcmp(item.word, root->data.word) < 0) { // 삽입할 단어가 현재 노드 단어보다 작으면 왼쪽으로
         root->left = insert_bst(root->left, item);
-    } else if (cmp > 0) { // 삽입할 단어가 현재 노드 단어보다 크면 오른쪽으로
+    } else if (strcmp(item.word, root->data.word) > 0) { // 삽입할 단어가 현재 노드 단어보다 크면 오른쪽으로
         root->right = insert_bst(root->right, item);
     } else { // 단어가 이미 트리에 존재하면 빈도수만 증가
         root->data.freq++;
@@ -33,15 +30,14 @@ TNode* insert_bst(TNode* root, WordFreq item) {
 }
 
 // BST에서 특정 단어를 검색하여 WordFreq 데이터의 포인터 반환
-WordFreq* search_bst(TNode* root, const char* word_key) {
+WordFreq* search_bst(TNode* root, const char* wordKey) {
     if (root == NULL) {
         return NULL;
     }
-    int cmp = strcmp(word_key, root->data.word);
-    if (cmp < 0) {
-        return search_bst(root->left, word_key);
-    } else if (cmp > 0) {
-        return search_bst(root->right, word_key);
+    if (strcmp(wordKey, root->data.word) < 0) {
+        return search_bst(root->left, wordKey);
+    } else if (strcmp(wordKey, root->data.word) > 0) {
+        return search_bst(root->right, wordKey);
     } else {
         return &(root->data); // 단어 찾음, 데이터 주소 반환
     }

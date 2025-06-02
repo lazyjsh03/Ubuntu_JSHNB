@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -g -O -fcommon
+CFLAGS = -Wall -g -O
 
 # 실행 파일 이름
 TARGET = wordCount
