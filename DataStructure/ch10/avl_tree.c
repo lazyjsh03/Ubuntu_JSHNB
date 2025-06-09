@@ -115,8 +115,8 @@ TNode* insert_AVL(TNode* root, int key) // AVL 트리의 삽입
 void main()
 {
 	TNode* root = NULL, * node;
-//	int keys[] = { 7, 8, 9, 2, 1, 5, 3, 6, 4 }; // 그림 10.27의 데이터 삽입
-	int keys[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 }; // 정렬된 데이터의 삽입
+	int keys[] = { 7, 8, 9, 2, 1, 5, 3, 6, 4 }; // 그림 10.27의 데이터 삽입
+//	int keys[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 }; // 정렬된 데이터의 삽입
 
 	for (int i = 0; i < 9; i++) {
 		root = insert_AVL(root, keys[i]);

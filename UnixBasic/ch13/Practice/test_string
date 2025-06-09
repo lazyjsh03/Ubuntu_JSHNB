@@ -3,8 +3,7 @@
 # test string 
 #
 
-echo "Are you OK (y/n) : "
-read ans                            # ans 변수에 값 저장
+read -p "Are you OK (y/n) : " ans                            # ans 변수에 값 저장
 
 if [[ $ans = [Yy]* ]]               # y로 시작하는 문자열 비교
 then
