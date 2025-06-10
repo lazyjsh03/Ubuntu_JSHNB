@@ -1,0 +1,10 @@
+#! /bin/bash
+# 일반 파일을 스크립트 파일로 변경
+find . -type f -name "*.sh" | while read script; do
+    if [[ -x "$script" ]]; then
+        echo "Changing $script to a script file"
+        chmod +x "$script"
+    else
+        echo "Skipping $script, not executable"
+    fi
+done

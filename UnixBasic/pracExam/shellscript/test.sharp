@@ -1,0 +1,5 @@
+#!/bin/more
+# test_sharp
+# This script tests the sharp command-line tool for image processing.
+# 주석문도 모두 출력됨
+echo "This line is printed"
